@@ -1,0 +1,366 @@
+* {
+  margin: 0;
+  outline: 0;
+  padding: 0;
+}
+
+html {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  font-family: "Montserrat", sans-serif;
+}
+
+html body {
+  background-color: #f3f5f6;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-pack: distribute;
+  justify-content: space-around;
+  margin: 0 4vw;
+}
+
+html body .logo {
+  margin-bottom: 20px;
+  height: 45px;
+  width: 45px;
+}
+
+html body h1 {
+  font-size: 45px;
+  font-weight: 900;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+html body .intro {
+  margin-top: 10vh;
+  max-width: 40%;
+  height: 100%;
+  height: 90vh;
+}
+
+html body .intro #il {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  height: 50%;
+}
+
+html body .intro #il #illust {
+  height: 100%;
+  width: auto;
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+html body .form {
+  max-width: 100%;
+}
+
+html body .form #title {
+  display: none;
+}
+
+html body .form .card {
+  background-color: white;
+  border-radius: 10px;
+  height: 560px;
+  max-height: 700px;
+  padding: 40px;
+  -webkit-box-shadow: 0px 10px 30px rgba(74, 83, 85, 0.171);
+  box-shadow: 0px 10px 30px rgba(74, 83, 85, 0.171);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+
+html body .form .card .buttons {
+  position: relative;
+  background-color: #f1f1f1;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  border-radius: 30px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  padding: 3px;
+  margin-top: 35px;
+  margin-bottom: 30px;
+  z-index: 10;
+}
+
+html body .form .card .buttons #background-btn {
+  -webkit-transition: all .5s ease-in-out;
+  transition: all .5s ease-in-out;
+  position: absolute;
+  height: 82%;
+  width: 80px;
+  right: 4px;
+  top: 3px;
+  background-image: linear-gradient(-25deg, #f03d53, #fe5430);
+  z-index: -1;
+  border-radius: 15px;
+}
+
+html body .form .card .buttons #sign-in {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  padding: 7px 20px;
+  background-color: transparent;
+  color: #595959;
+  border: none;
+  margin-right: 5px;
+  font-weight: 550;
+  font-size: 12px;
+  position: relative;
+}
+
+html body .form .card .buttons #sign-up {
+  -webkit-transition: all 1s;
+  transition: all 1s;
+  padding: 7px 20px;
+  background-color: transparent;
+  color: white;
+  border: none;
+  font-size: 12px;
+  border-radius: 30px;
+  font-weight: 550;
+}
+
+html body .form .card .forms {
+  width: 50vw;
+  min-width: 230px;
+  max-width: 400px;
+  margin: 0;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+html body .form .card .forms .psw {
+  margin: 0;
+  padding: 0;
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+}
+
+html body .form .card .forms .psw .eye {
+  position: absolute;
+  right: 9px;
+  top: 5px;
+  height: 20px;
+  width: 20px;
+  opacity: .6;
+}
+
+html body .form .card .forms .required {
+  margin-left: 10px;
+  font-size: 9px;
+  color: red;
+  font-weight: 600;
+  display: none;
+}
+
+html body .form .card .forms input {
+  border-radius: 5px;
+  padding-bottom: 5px;
+  margin-top: 2px;
+  margin-bottom: 15px;
+  border: none;
+  border-bottom: 1px solid rgba(128, 128, 128, 0.3);
+  width: 90%;
+  font-family: "Montserrat", sans-serif;
+  padding-left: 5px;
+  padding-top: 5px;
+}
+
+html body .form .card .forms input[type="password"] {
+  padding-right: 28px;
+}
+
+html body .form .card .forms #formSignUp .profil {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  list-style-type: none;
+  -webkit-box-align: baseline;
+  -ms-flex-align: baseline;
+  align-items: baseline;
+}
+
+html body .form .card .forms #formSignUp .profil li:first-child {
+  margin-right: 25px;
+}
+
+html body .form .card .forms #formSignUp .controle-errors {
+  margin: 10px;
+  margin-top: 0;
+  width: 100%;
+  font-size: 9px;
+}
+
+html body .form .card .forms #formSignUp .controle-errors p {
+  color: orange;
+  margin-bottom: 10px;
+}
+
+html body .form .card .forms #formSignUp .controle-errors ul {
+  color: #5b5b5b;
+}
+
+html body .form .card .forms #formSignUp .controle-errors ul li {
+  margin: 4px;
+}
+
+html body .form .card .forms #formSignUp .controle-errors ul .done {
+  color: #26cc65;
+}
+
+html body .form .card .forms #formSignUp #confirmPassword {
+  margin-bottom: 10px;
+}
+
+html body .form .card .forms #formSignIn {
+  display: none;
+  margin-top: 70px;
+}
+
+html body .form .card .forms #formSignIn #phoneSend {
+  position: relative;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: 100%;
+}
+
+html body .form .card .forms #formSignIn #send-sms {
+  position: absolute;
+  right: 0;
+  z-index: 10;
+  top: 0;
+  bottom: 0;
+  border: none;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+html body .form .card .forms #formSignIn #send-sms img {
+  height: 18px;
+  width: 18px;
+  -webkit-filter: invert(0.2);
+  filter: invert(0.2);
+  cursor: pointer;
+}
+
+html body .form .card .forms #formSignIn #login-with-email {
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 13.5px;
+  font-weight: bold;
+  color: #18212e;
+  background-color: transparent;
+  border: none;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+html body .form .card .forms #formSignIn .hide {
+  display: none;
+  margin: 0;
+  padding: 0;
+}
+
+html body .form .card .forms .submit {
+  padding-top: 0%;
+  margin-top: 20px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  background-image: linear-gradient(-25deg, #f03d53, #fe5430);
+  border: none;
+  height: 40px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  letter-spacing: 1px;
+  font-variant: small-caps;
+  min-width: 200px;
+}
+
+html body .form .card .forms #recaptcha-container {
+  -webkit-box-align: cen;
+  -ms-flex-align: cen;
+  align-items: cen;
+  height: 100px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    overflow-y: auto;
+  }
+  html body {
+    background-color: white;
+  }
+  html body h1 {
+    font-size: 30px;
+  }
+  html body .intro {
+    display: none;
+  }
+  html body .form {
+    margin-bottom: 10vh;
+  }
+  html body .form #title {
+    display: block;
+    margin-top: 10vh;
+  }
+  html body .form .card {
+    height: auto;
+    background-color: transparent;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+/*# sourceMappingURL=sign.css.map */

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/confirm_phone_number/confirm-phone-number.css">
+    <title>Confirm phone number</title>
+</head>
+
+<body>
+    <div id="card">
+        <h3>
+            Please Confirm<br>Your Phone Number
+        </h3>
+        <form id="confirm_phone_form" >
+            <label for="phoneNumber">Your phone number</label><br>
+            <input type="tel" id="phoneNumber"><br>
+            <label for="confirm-code">Confirmation code</label><br>
+            <input type="text" id="confirm-code"><br>
+            <div id="recaptcha-container"></div><br>
+            <button id="send-sms"   onclick="phoneAuth();">Send sms</button>
+            <input type="submit" value="confirm" onclick="codeVerify();">
+        </form>
+    </div>
+
+
+    <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+    <!--<script src="../backend/confirm_phone_number.js"></script>-->
+    <script src="../backend/constant_id.js"></script>
+    <script src="../backend/sha_256_hash.js"></script>
+    <script src="../backend/firebase_configuration.js"></script>
+    <script src="../backend/confirm_phone_number/variables.js"></script>
+    <script src="../backend/confirm_phone_number/phone_number_auth.js"></script>
+</body>
+
+</html>

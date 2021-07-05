@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/dashbord/dashboard.css">
+    <title>Dashboard</title>
+</head>
+
+<body>
+    <div id="side-menu">
+        <ul>
+            <li id="menu-size"><img src="../assets/icons/expand.svg" alt="expand-collaps" id="exp-coll" class="collaps">
+            </li>
+            <li>
+                <ul id="functions">
+                    <li>
+                        <ul class="function slt">
+                            <li><img src="../assets/icons/dashboard-selected.svg" alt="dashboard"></li>
+                            <li>Dashboard</li>
+                        </ul>
+                    </li>
+                    <li>
+                        <ul class="function">
+                            <li><img src="../assets/icons/settings.svg" alt="settings"></li>
+                            <li>Settings</li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li id="log-out">
+                <a href="#">
+                    <span>Log out</span>
+                    <img src="../assets/icons/exit.svg" alt="log out" onclick="logOut();">
+                </a>
+            </li>
+        </ul>
+    </div>
+    <div id="container">
+        <div id="top-bar">
+            <ul>
+                <li>
+                    <h1 id="title">Tracking Map</h1>
+                </li>
+                <li id="search-bar">
+                    <input type="text" name="search" id="search" placeholder="Search">
+                    <img src="../assets/icons/loupe.svg" alt="search" id="search-icon">
+                    <img src="../assets/icons/close.svg" id="cross">
+                </li>
+            </ul>
+        </div>
+        <div id="map-container">
+            <button id="show-details"><img src="../assets/icons/view-details.svg" alt="show-detials"
+                    title="show details"></button>
+            <div id="car-details">
+                <h3>Car details</h3>
+                <div id="car-details-table">
+                    <table id="carDetails">
+                    </table>
+                </div>
+            </div>
+            <div id="map">
+                <iframe src="https://maps.google.com/maps?q=Alger;&output=embed">
+                </iframe>
+            </div>
+        </div>
+        <div id="positions">
+            <table id="table-head">
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Heur</th>
+                        <th>Latitude</th>
+                        <th>Longitude</th>
+                    </tr>
+                </thead>
+
+            </table>
+            <div id="positions-container">
+                <table id="positionsTable">
+                </table>
+            </div>
+        </div>
+        <div id="cars-list">
+            <h3>List of cars</h3>
+            <div id="table-extra-container">
+                <div id="car-list-table">
+                    <table id="carListTable">
+                        <thead>
+                            <tr>
+                                <th>ID</th>
+                                <th>Marque</th>
+                                <th>Modele</th>
+                                <th>Numero de telephone</th>
+                                <th></th>
+                            </tr>
+                        </thead>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <button id="add-car">
+            <span id="add-car-img-container"><img src="../assets/icons/add-car.svg" alt="add-car"></span>
+            <span>Add New Car</span>
+        </button>
+    </div>
+
+    <div id="add-car-form">
+        <div id="form-container">
+            <h3>Add New Car</h3>
+            <form id="add_car_form" action="/">
+                <label for="carPhoneNumber">Phone number</label><br>
+                <input type="tel" name="phoneNumber" id="carPhoneNumber"><br>
+                <label for="carPassword">Password</label><br>
+                <input type="password" name="password" id="carPassword"><br>
+                <input type="submit" value="done" id="submit">
+            </form>
+            <button id="cancel-btn">cancel</button>
+        </div>
+    </div>
+
+    <div id="delete-mssg">
+        <div id="delete-mssg-card">
+            <h3>
+                Attention !
+            </h3>
+            <p>
+                voulez vous vraiment supprimer une voiture de la liste ?
+            </p>
+            <button id="confirm-delete">
+                confirmer
+            </button>
+            <button id="cancel-delete">annuler</button>
+        </div>
+    </div>
+
+    <script src="../scripts/dashboardScripts.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
+    <script src="../backend/dashboard.js"></script>
+</body>
+
+</html>

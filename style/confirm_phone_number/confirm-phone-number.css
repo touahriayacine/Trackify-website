@@ -1,0 +1,149 @@
+html {
+	overflow-x: hidden;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	font-family: "Montserrat", sans-serif;
+}
+
+html h3 {
+	font-size: 19.5px;
+	font-weight: 700;
+	line-height: 35px;
+	margin-left: 30px;
+}
+
+body {
+	background-color: #f3f5f6;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	width: 100vw;
+	height: 100vh;
+	margin: 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+}
+
+@media screen and (max-width: 564px) {
+	body {
+		background-color: white;
+	}
+}
+
+body #card {
+	background-color: white;
+	width: 400px;
+	margin: 30px 0;
+	height: fit-content;
+	padding: 0;
+	border-radius: 10px;
+	-webkit-box-shadow: 0px 10px 20px rgba(128, 128, 128, 0.253);
+	box-shadow: 0px 10px 20px rgba(128, 128, 128, 0.253);
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+
+@media screen and (max-width: 564px) {
+	body #card {
+		width: 100vw;
+		height: -webkit-fit-content;
+		height: -moz-fit-content;
+		height: fit-content;
+		border-radius: 0%;
+		-webkit-box-shadow: none;
+		box-shadow: none;
+		margin: 0;
+	}
+}
+
+body #card form {
+	width: 100%;
+	margin: 0;
+}
+
+@media screen and (max-width: 564px) {
+	body #card form {
+		width: 100vw;
+	}
+}
+
+body #card form label {
+	padding-left: 10px;
+	width: 70%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+body #card form input {
+	background-color: #f3f5f6;
+	margin-bottom: 30px;
+	border: none;
+	margin-top: 8px;
+	padding: 10px 5px;
+	width: 70%;
+	margin-left: 14%;
+	margin-right: 14%;
+	font-size: 13.5px;
+	font-family: "Montserrat", sans-serif;
+	font-weight: 500;
+	border-radius: 10px;
+}
+
+body #card form input[type=submit] {
+	width: 80%;
+	background-image: linear-gradient(-25deg, #f03d53, #fe5430);
+	margin: 30px 10% 0 10%;
+	color: white;
+	font-weight: 700;
+	font-variant: small-caps;
+	cursor: pointer;
+	margin-bottom: 50px;
+}
+
+body #card form #send-sms {
+	background-color: transparent;
+	border: none;
+	font-size: 13.5px;
+	font-weight: 600;
+	width: 40%;
+	margin: 0 30%;
+	color: #1e377c;
+	text-decoration: underline;
+	cursor: pointer;
+}
+
+body #card form #recaptcha-container {
+	height: 80px;
+	padding: 0px;
+	width: 100%;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: horizontal;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: row;
+	flex-direction: row;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+}
+/*# sourceMappingURL=confirm-phone-number.css.map */
