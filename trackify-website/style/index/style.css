@@ -17,7 +17,7 @@ html {
   font-family: "Montserrat", sans-serif;
   font-size: 13.5px;
   color: #292929;
-  width: 100%;
+  width: 100vh;
 }
 
 html h1 {
@@ -80,12 +80,6 @@ html body header nav ul {
 html body header nav ul #logo {
   margin-right: 20px;
   display: none;
-}
-
-@media screen and (min-width: 600px) {
-  html body header nav ul #logo {
-    display: block;
-  }
 }
 
 html body header nav ul #logo img {
@@ -386,19 +380,19 @@ html body main #introduction #intro-img {
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 
 html body main #introduction #intro-img img {
   -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   width: auto;
   padding: 10px;
 }
@@ -567,7 +561,9 @@ html body main #collaborators ul ul {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "round-img name" "round-img surname" "round-img ce";
-  width: 200px;
+  -ms-grid-columns: 80px 1fr;
+      grid-template-columns: 80px 1fr;
+  width: 220px;
   color: #292929;
   background-color: white;
   margin: 10px;
@@ -777,7 +773,29 @@ html body main .app-img {
   margin-top: 10vh;
   min-width: 200px;
   max-height: 500px;
-  background-color: red;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0;
+}
+
+html body main .app-img img {
+  padding: 0;
+  margin: 0;
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 100%;
+  width: auto;
 }
 
 html body main #tracker {
@@ -909,7 +927,7 @@ html footer ul li ul #mini-logo {
 html footer ul li ul #mini-logo img {
   height: 40px;
   -webkit-filter: invert(0.3);
-          filter: invert(0.3);
+  filter: invert(0.3);
   width: 40px;
 }
 
@@ -984,6 +1002,183 @@ html footer #copyright {
   font-family: "Montserrat", sans-serif;
   font-size: 15px;
   font-weight: bold;
+}
+
+@media screen and (min-width: 600px) {
+  html body header nav ul #logo {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 678px) {
+  html h1 {
+    font-size: 37.5px;
+  }
+  html body main #introduction {
+    max-height: 60vh;
+    display: block;
+  }
+  html body main #introduction #intro-img {
+    display: none;
+  }
+  html body main #introduction #start-btn {
+    text-align: center;
+  }
+  html body main #collaborators {
+    padding-top: 15vh;
+  }
+  html body main #applications .dscpt p {
+    min-width: 250px;
+  }
+  html body footer ul li {
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  html body header nav ul {
+    display: block;
+  }
+  html body header nav ul:first-child {
+    padding-top: 30px;
+    padding-right: 20px;
+  }
+  html body header nav ul #stack-menu {
+    display: none;
+  }
+  html body header nav #burger {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  html body main #service {
+    display: block;
+  }
+  html body main #service #service-dscpt {
+    margin-bottom: 30px;
+  }
+  html body main #service #service-img {
+    text-align: center;
+    width: 100%;
+  }
+  html body main #applications #tracker {
+    display: block;
+  }
+  html body main #applications #tracker .app-img {
+    max-height: 300px;
+    max-width: 100%;
+  }
+  html body main #applications #car {
+    display: block;
+  }
+  html body main #applications #car .app-img {
+    max-height: 300px;
+    max-width: 100%;
+  }
+  html body footer {
+    position: relative;
+    padding-left: 20px;
+    padding-top: 40px;
+    padding-right: 20px;
+    min-height: 220px;
+    max-height: 30vh;
+    font-size: 12.45px;
+    background-color: #f3f5f6;
+    max-width: 100%;
+  }
+  html body footer ul {
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+  }
+  html body footer ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  html body footer ul li ul {
+    padding: 0;
+    display: block;
+    padding: 10px;
+  }
+  html body footer ul li ul #mini-logo {
+    height: 40px;
+    width: 40px;
+    width: auto;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  html body footer ul li ul #mini-logo img {
+    height: 40px;
+    -webkit-filter: invert(0.3);
+            filter: invert(0.3);
+    width: 40px;
+  }
+  html body footer ul li ul #esi-logo {
+    height: 40px;
+    width: auto;
+    margin-bottom: 50px;
+    text-align: center;
+  }
+  html body footer ul li ul .mini-title {
+    font-weight: bold;
+    margin-bottom: 15px;
+  }
+  html body footer ul li ul #ecole-title {
+    margin-bottom: 15px;
+  }
+  html body footer ul li ul li {
+    width: 100%;
+    margin: 2px;
+  }
+  html body footer ul li ul li p {
+    margin-top: 5px;
+    max-width: 300px;
+    text-align: center;
+  }
+  html body footer ul li ul li #social-accounts {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    margin-top: 10px;
+    width: 100%;
+    padding: 0;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-left: 20px;
+  }
+  html body footer ul li ul li #social-accounts li {
+    margin: 5px;
+  }
+  html body footer ul li ul li #social-accounts li img {
+    height: 20px;
+    width: 20px;
+    -webkit-filter: invert(0.5);
+    filter: invert(0.5);
+    margin: 0;
+    cursor: pointer;
+  }
+  html body footer #copyright {
+    color: #595959;
+    width: 100%;
+    position: absolute;
+    bottom: 20px;
+    text-align: center;
+    font-family: "Montserrat", sans-serif;
+    font-size: 15px;
+    font-weight: bold;
+  }
 }
 
 @media screen and (max-width: 678px) {

@@ -25,13 +25,13 @@ function ReadCarList() {
                             <td> ${carMarque} </td>
                             <td> ${carModele} </td>
                             <td> ${doc.id} </td>                                                    
-                            <td class="delete" onclick = "showDeleteCarForm();"><img src="../assets/icons/trash.svg"
+                            <td class="delete" onclick = "showDeleteCarForm();"><img src="./assets/icons/trash.svg"
                                         alt="trash">
                         </tr>
                     `;
                                 car_detail(cars[0]);
                                 car_positions(cars[0]);
-                                localStorage.setItem('phonecarfortracking' , cars[0]);
+                                localStorage.setItem('phonecarfortracking', cars[0]);
                                 continousTracking();
                                 carPhoneNumber = cars[0];
 
@@ -42,7 +42,7 @@ function ReadCarList() {
                             <td> ${carMarque} </td>
                             <td> ${carModele} </td>
                             <td> ${doc.id} </td>                                                    
-                            <td class="delete" onclick = "showDeleteCarForm();"><img src="../assets/icons/trash.svg"
+                            <td class="delete" onclick = "showDeleteCarForm();"><img src="./assets/icons/trash.svg"
                                         alt="trash">
                             </tr>
                     `;

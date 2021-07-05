@@ -5,20 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../style/sign/sign.css">
+    <link rel="stylesheet" href="./style/sign/sign.css">
+    <link rel="shortcut icon" href="./assets/icons/logo-rouge.svg" type="image/x-icon">
     <title>Start tracking !</title>
 </head>
 
 <body>
     <section class="intro">
-        <a href="../pages/index.html"><img class="logo" src="../assets/icons/logo-logo-black.svg" alt="logo"></a>
+        <a href="./index.html"><img class="logo" src="./assets/icons/logo-black.svg" alt="logo"></a>
         <h1>Easy & fast<br>continous tracking</h1>
-        <div id="il"><img id="illust" src="../assets/images/login-asset.svg" alt="intro-img">
+        <div id="il"><img id="illust" src="./assets/images/login-asset.svg" alt="intro-img">
         </div>
     </section>
     <section class="form">
         <div id="title">
-            <img class="logo" src="../assets/icons/logo-logo-black.svg" alt="our logo">
+            <img class="logo" src="./assets/icons/logo-black.svg" alt="our logo">
             <h1>Easy & fast<br>continous tracking</h1>
         </div>
         <div class="card">
@@ -55,13 +56,13 @@
                     <div class="psw">
                         <input class="inputs-up" type="password" id="password1" name="password"
                             oninput=" deleteErreurBehavior();Update(this.value , 'password1')">
-                        <img src="../assets/icons/view.svg" alt="visibility" class="eye " id="eye1">
+                        <img src="./assets/icons/view.svg" alt="visibility" class="eye " id="eye1">
                     </div>
                     <label for="password2">Confirm password</label><span class="required">required *</span><br>
                     <div class="psw">
                         <input class="inputs-up" type="password" id="password2" name="confirmPassword"
                             oninput=" deleteErreurBehavior();Update(this.value , 'password2')">
-                        <img src="../assets/icons/view.svg" alt="visibility" class="eye " id="eye2">
+                        <img src="./assets/icons/view.svg" alt="visibility" class="eye " id="eye2">
                     </div>
                     <div class="controle-errors">
                         <p>Seems good, we suggest to make it stonger!</p>
@@ -86,7 +87,7 @@
                     <div id="phoneSend">
                         <input type="tel" class="inputs" name="phoneNumber" id="phoneNumber1"
                             oninput=" deleteErreurBehavior();Update(this.value , 'phoneNumber')"><br>
-                        <button id="send-sms" class="inputs"><img src="../assets/icons/send.svg" title="send sms"
+                        <button id="send-sms" class="inputs"><img src="./assets/icons/send.svg" title="send sms"
                                 alt="send"></button>
                     </div>
 
@@ -94,14 +95,14 @@
                     <div class="psw inputs hide">
                         <input type="password" id="password3" name="password"
                             oninput=" deleteErreurBehavior();Update(this.value , 'password3')">
-                        <img src="../assets/icons/view.svg" alt="visibility" class="eye " id="eye3">
+                        <img src="./assets/icons/view.svg" alt="visibility" class="eye " id="eye3">
                     </div>
 
                     <label for="password4" class="inputs">Entry code</label>
                     <div class="psw inputs">
                         <input type="password" id="password4" name="password"
                             oninput=" deleteErreurBehavior();Update(this.value , 'password4')">
-                        <img src=" ../assets/icons/view.svg" alt="visibility" class="eye" id="eye4">
+                        <img src=" ./assets/icons/view.svg" alt="visibility" class="eye" id="eye4">
                     </div>
 
                     <div id="recaptcha-container" class="inputs"></div>
@@ -112,21 +113,21 @@
         </div>
     </section>
 
-    <script src="../scripts/signScripts.js"></script>
+    <script src="./scripts/signScripts.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.4/firebase.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-app.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-analytics.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-firestore.js"></script>
     <script src="https://www.gstatic.com/firebasejs/8.6.3/firebase-auth.js"></script>
     <!--<script src="../backend/sign.js"></script>-->
-    <script src="../backend/constant_id.js"></script>
-    <script src="../backend/firebase_configuration.js"></script>
-    <script src="../backend/sha_256_hash.js"></script>
-    <script src="../backend/sign/input_update.js"></script>
-    <script src="../backend/sign/sign_in.js"></script>
-    <script src="../backend/sign/sign_up.js"></script>
-    <script src="../backend/sign/variables.js"></script>
-    <script src="../backend/sign/signin_with_phone.js"></script>
+    <script src="./backend/constant_id.js"></script>
+    <script src="./backend/firebase_configuration.js"></script>
+    <script src="./backend/sha_256_hash.js"></script>
+    <script src="./backend/sign/input_update.js"></script>
+    <script src="./backend/sign/sign_in.js"></script>
+    <script src="./backend/sign/sign_up.js"></script>
+    <script src="./backend/sign/variables.js"></script>
+    <script src="./backend/sign/signin_with_phone.js"></script>
 </body>
 
 </html>

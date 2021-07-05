@@ -8,7 +8,7 @@ function expandCollapsSideBar() {
         if (Icon.classList.contains("expand")) {
             body.style.gridTemplateColumns = "1fr 25fr";
             logOutString.style.display = "none";
-            Icon.src = "../assets/icons/expand.svg";
+            Icon.src = "./assets/icons/expand.svg";
             let dashboard = document.getElementsByClassName("function")[0].childNodes[3];
             let settings = document.getElementsByClassName("function")[1].childNodes[3];
             dashboard.style.display = "none";
@@ -20,7 +20,7 @@ function expandCollapsSideBar() {
         else {
             body.style.gridTemplateColumns = "1fr 15fr";
             logOutString.style.display = "inline-block";
-            Icon.src = "../assets/icons/collaps.svg";
+            Icon.src = "./assets/icons/collaps.svg";
             let dashboard = document.getElementsByClassName("function")[0].childNodes[3];
             let settings = document.getElementsByClassName("function")[1].childNodes[3];
             dashboard.style.display = "block";

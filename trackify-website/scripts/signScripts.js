@@ -52,8 +52,8 @@ function clickSignButtons() {
 clickSignButtons();
 
 function eyeConfig() {
-    let viewIcon = "../assets/icons/view.svg";
-    let hideIcon = "../assets/icons/visibility.svg";
+    let viewIcon = "./assets/icons/view.svg";
+    let hideIcon = "./assets/icons/visibility.svg";
     for (let index = 1; index <= 4; index++) {
         let eye = document.getElementById("eye" + index);
         let password = document.getElementById("password" + index);
@@ -108,10 +108,10 @@ function deleteErreurBehavior() {
     let mssg = document.getElementsByClassName("required");
     for (let index = 0; index < inputs.length; index++) {
         //inputs[index].addEventListener("oninput", function () {
-            if (inputs[index].value.length > 0) {
-                inputs[index].style = "border: none";
-                mssg[index].style.display = "none";
-            }
+        if (inputs[index].value.length > 0) {
+            inputs[index].style = "border: none";
+            mssg[index].style.display = "none";
+        }
 
         //})
     }
