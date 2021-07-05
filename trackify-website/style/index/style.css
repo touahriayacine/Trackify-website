@@ -602,7 +602,6 @@ html body main #service p {
 }
 
 html body main #service #service-img {
-	background-color: red;
 	max-height: 50vh;
 	min-height: 300px;
 	width: 100%;
@@ -613,8 +612,16 @@ html body main #service #service-img {
 	-webkit-box-align: center;
 	-ms-flex-align: center;
 	align-items: center;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	margin-top: 10%;
 }
-
+html body main #service #service-img img {
+	height: auto;
+	width: 90%;
+	object-fit: cover;
+}
 html body main #features {
 	padding-top: 5vh;
 	padding-bottom: 5vh;
