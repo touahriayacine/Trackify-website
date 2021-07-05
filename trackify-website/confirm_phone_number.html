@@ -7,21 +7,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/confirm_phone_number/confirm-phone-number.css">
     <link rel="shortcut icon" href="./assets/icons/logo-rouge.svg" type="image/x-icon">
-    <title>Confirm phone number</title>
+    <title>Confirmer numéro de téléphone</title>
 </head>
 
 <body>
     <div id="card">
         <h3>
-            Please Confirm<br>Your Phone Number
-        </h3>
+            Veuillez confirmer<br>votre numéro de téléphone </h3>
         <form id="confirm_phone_form">
-            <label for="phoneNumber">Your phone number</label><br>
+            <label for="phoneNumber">Votre numéro de téléphone</label><br>
             <input type="tel" id="phoneNumber"><br>
-            <label for="confirm-code">Confirmation code</label><br>
+            <label for="confirm-code">Confirmation du code</label><br>
             <input type="text" id="confirm-code"><br>
             <div id="recaptcha-container"></div><br>
-            <button id="send-sms" onclick="phoneAuth();">Send sms</button>
+            <button id="send-sms" onclick="phoneAuth();">envoyer SMS</button>
             <input type="submit" value="confirm" onclick="codeVerify();">
         </form>
     </div>

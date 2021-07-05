@@ -8,8 +8,8 @@ function download(fileUrl, fileName) {
 
 
 document.getElementById('download_tracker').onclick = function () {
-    download('logo-black.svg/application/app-debug.apk', 'app-debug.apk');
+    download('.assets/application/app-debug.apk', 'app-debug.apk');
 }
 document.getElementById('download_car').onclick = function () {
-    download('logo-black.svg/application/app-debug.apk', 'app-debug.apk');
+    download('.assets/application/app2-debug.apk', 'app2-debug.apk');
 }

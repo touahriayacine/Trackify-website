@@ -76,11 +76,11 @@ function loginWith() {
     let mssg = document.getElementById("login-with-email");
     let inputs = document.getElementsByClassName("inputs");
     mssg.addEventListener("click", function () {
-        if (mssg.innerText == "login with phone number") {
-            mssg.innerText = "login with email";
+        if (mssg.innerText == "connecter avec numero de telephone") {
+            mssg.innerText = "connecter avec l'email";
         }
         else {
-            mssg.innerText = "login with phone number";
+            mssg.innerText = "connecter avec numero de telephone";
         }
         for (let index = 0; index < inputs.length; index++) {
             inputs[index].classList.toggle("hide");

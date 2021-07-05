@@ -26,14 +26,14 @@
                     <li>
                         <ul class="function">
                             <li><img src="./assets/icons/settings.svg" alt="settings"></li>
-                            <li>Settings</li>
+                            <li>Paramettres</li>
                         </ul>
                     </li>
                 </ul>
             </li>
             <li id="log-out">
                 <a>
-                    <span>Log out</span>
+                    <span>Sortir</span>
                     <img src="./assets/icons/exit.svg" alt="log out" onclick="logOut();">
                 </a>
             </li>
@@ -46,7 +46,7 @@
                     <h1 id="title">Tracking Map</h1>
                 </li>
                 <li id="search-bar">
-                    <input type="text" name="search" id="search" placeholder="Search">
+                    <input type="text" name="search" id="search" placeholder="Rechercher ..">
                     <img src="./assets/icons/loupe.svg" alt="search" id="search-icon">
                     <img src="./assets/icons/close.svg" id="cross">
                 </li>
@@ -56,7 +56,7 @@
             <button id="show-details"><img src="./assets/icons/view-details.svg" alt="show-detials"
                     title="show details"></button>
             <div id="car-details">
-                <h3>Car details</h3>
+                <h3>Details de vehicule</h3>
                 <div id="car-details-table">
                     <table id="carDetails">
                     </table>
@@ -85,7 +85,7 @@
             </div>
         </div>
         <div id="cars-list">
-            <h3>List of cars</h3>
+            <h3>List des vehicules</h3>
             <div id="table-extra-container">
                 <div id="car-list-table">
                     <table id="carListTable">
@@ -104,21 +104,21 @@
         </div>
         <button id="add-car">
             <span id="add-car-img-container"><img src="./assets/icons/add-car.svg" alt="add-car"></span>
-            <span>Add New Car</span>
+            <span>Ajouter nouvelle voiture</span>
         </button>
     </div>
 
     <div id="add-car-form">
         <div id="form-container">
-            <h3>Add New Car</h3>
+            <h3>Ajouter nouvelle voiture</h3>
             <form id="add_car_form" action="/">
-                <label for="carPhoneNumber">Phone number</label><br>
+                <label for="carPhoneNumber">Numero de telephone</label><br>
                 <input type="tel" name="phoneNumber" id="carPhoneNumber"><br>
-                <label for="carPassword">Password</label><br>
+                <label for="carPassword">Mot de passe</label><br>
                 <input type="password" name="password" id="carPassword"><br>
-                <input type="submit" value="done" id="submit">
+                <input type="submit" value="ajouter" id="submit">
             </form>
-            <button id="cancel-btn">cancel</button>
+            <button id="cancel-btn">annuler</button>
         </div>
     </div>
 

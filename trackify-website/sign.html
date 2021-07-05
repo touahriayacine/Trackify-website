@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
     <meta charset="UTF-8">
@@ -7,65 +7,65 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./style/sign/sign.css">
     <link rel="shortcut icon" href="./assets/icons/logo-rouge.svg" type="image/x-icon">
-    <title>Start tracking !</title>
+    <title>Commancer le track !</title>
 </head>
 
 <body>
     <section class="intro">
         <a href="./index.html"><img class="logo" src="./assets/icons/logo-black.svg" alt="logo"></a>
-        <h1>Easy & fast<br>continous tracking</h1>
+        <h1>Facile & rapide<br>suivi continu</h1>
         <div id="il"><img id="illust" src="./assets/images/login-asset.svg" alt="intro-img">
         </div>
     </section>
     <section class="form">
         <div id="title">
             <img class="logo" src="./assets/icons/logo-black.svg" alt="our logo">
-            <h1>Easy & fast<br>continous tracking</h1>
+            <h1>Facile & rapide<br>suivi continu</h1>
         </div>
         <div class="card">
             <div class="buttons">
                 <div id="background-btn"></div>
-                <button id="sign-in">sign in</button>
-                <button id="sign-up">sign up</button>
+                <button id="sign-in">connecter</button>
+                <button id="sign-up">créer</button>
             </div>
             <div class="forms">
                 <div id="formSignUp">
                     <ul class="profil">
                         <li>
-                            <label for="firstName">First Name </label><span class="required">required *</span><br>
+                            <label for="firstName">Nom </label><span class="required">obligatoire *</span><br>
                             <input class="inputs-up" type="text" name="firtName" id="firstName"
                                 oninput=" deleteErreurBehavior();Update(this.value , 'firstName')">
                         </li>
                         <li>
-                            <label for="surName">Surname</label><span class="required">required *</span><br>
+                            <label for="surName">Prenom</label><span class="required">obligatoire *</span><br>
                             <input class="inputs-up" type="text" name="surName" id="surName"
                                 oninput=" deleteErreurBehavior();Update(this.value , 'surName')">
                         </li>
                     </ul>
-                    <label for="phoneNumber">Phone Number</label><span class="required">required *</span><br>
+                    <label for="phoneNumber">Numero telephone</label><span class="required">obligatoire</span><br>
                     <input class="inputs-up" type="tel" name="phoneNumber" id="phoneNumber"
                         oninput=" deleteErreurBehavior();Update(this.value , 'phoneNumber')">
                     <span id="phone_errors"></span><br>
 
-                    <label for="email1">Email</label><span class="required">required *</span><br>
+                    <label for="email1">Email</label><span class="required">obligatoire</span><br>
                     <input class="inputs-up" type="email" name="email" id="email1"
                         oninput=" deleteErreurBehavior();Update(this.value , 'email')">
-                    <span id="email_errors"></span>
+                    <span id="email_errors"></span><br>
 
-                    <label for="password1">Password</label><span class="required">required *</span><br>
+                    <label for="password1">Mot de passe</label><span class="required">obligatoire</span><br>
                     <div class="psw">
                         <input class="inputs-up" type="password" id="password1" name="password"
                             oninput=" deleteErreurBehavior();Update(this.value , 'password1')">
                         <img src="./assets/icons/view.svg" alt="visibility" class="eye " id="eye1">
                     </div>
-                    <label for="password2">Confirm password</label><span class="required">required *</span><br>
+                    <label for="password2">Confirmer mot de passe</label><span class="required">obligatoire</span><br>
                     <div class="psw">
                         <input class="inputs-up" type="password" id="password2" name="confirmPassword"
                             oninput=" deleteErreurBehavior();Update(this.value , 'password2')">
                         <img src="./assets/icons/view.svg" alt="visibility" class="eye " id="eye2">
                     </div>
                     <div class="controle-errors">
-                        <p>Seems good, we suggest to make it stonger!</p>
+                        <p>Ça a l'air bien, nous suggérons de le rendre plus fort !</p>
                         <ul>
                             <li id="controls_phone">Incorrect phone Number ([+] [contry code] [phone 9 degits])</li>
                             <li id="controls_uppercase">Contains at least 2 uppercase</li>
@@ -76,14 +76,14 @@
                         </ul>
                     </div>
                     <div class="password-controle"></div>
-                    <input type="submit" value="let's go" class="submit" id="signUp">
+                    <input type="submit" value="commancer !" class="submit" id="signUp">
                 </div>
                 <div id="formSignIn">
                     <label for="email2" class="inputs hide">Email</label><br class="hide">
                     <input type="email" class="inputs hide" name="email" id="email2"
                         oninput=" deleteErreurBehavior();Update(this.value , 'email')">
 
-                    <label for="phoneNumber1" class="inputs">Phone Number</label>
+                    <label for="phoneNumber1" class="inputs">Numero de telephone</label>
                     <div id="phoneSend">
                         <input type="tel" class="inputs" name="phoneNumber" id="phoneNumber1"
                             oninput=" deleteErreurBehavior();Update(this.value , 'phoneNumber')"><br>
@@ -91,14 +91,14 @@
                                 alt="send"></button>
                     </div>
 
-                    <label for="password3" class="inputs hide">Password</label><br class="inputs hide">
+                    <label for="password3" class="inputs hide">Mot de passe</label><br class="inputs hide">
                     <div class="psw inputs hide">
                         <input type="password" id="password3" name="password"
                             oninput=" deleteErreurBehavior();Update(this.value , 'password3')">
                         <img src="./assets/icons/view.svg" alt="visibility" class="eye " id="eye3">
                     </div>
 
-                    <label for="password4" class="inputs">Entry code</label>
+                    <label for="password4" class="inputs">Code</label>
                     <div class="psw inputs">
                         <input type="password" id="password4" name="password"
                             oninput=" deleteErreurBehavior();Update(this.value , 'password4')">
@@ -106,8 +106,8 @@
                     </div>
 
                     <div id="recaptcha-container" class="inputs"></div>
-                    <input type="submit" value="Log in" class="submit" id="login">
-                    <button id="login-with-email">login with email</button>
+                    <input type="submit" value="connecter" class="submit" id="login">
+                    <button id="login-with-email">connecter avec l'email</button>
                 </div>
             </div>
         </div>
