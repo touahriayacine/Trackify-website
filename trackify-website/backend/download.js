@@ -8,8 +8,8 @@ function download(fileUrl, fileName) {
 
 
 document.getElementById('download_tracker').onclick = function () {
-    download('.assets/application/Trackify - tracker app.apk', 'Trackify - tracker app.apk');
+    download('assets/application/trackify-trackerApp.apk', 'trackify-trackerApp.apk');
 }
 document.getElementById('download_car').onclick = function () {
-    download('.assets/application/Trackify - car app.apk', 'Trackify - car app.apk');
+    download('assets/application/trackify-carApp.apk', 'trackify-carApp.apk');
 }
